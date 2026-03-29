@@ -1,0 +1,13 @@
+{
+  "name": "kimiclaude",
+  "version": "1.0.0",
+  "description": "Claude Code <-> Kimi CLI sub-agent bridge",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "node --test test/",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT"
+}

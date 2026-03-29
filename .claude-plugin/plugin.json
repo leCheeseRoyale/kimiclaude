@@ -1,0 +1,30 @@
+{
+  "name": "kimiclaude",
+  "version": "1.0.0",
+  "description": "Spawn Kimi CLI as a general-purpose sub-agent for Claude Code — define the task at spawn time, just like Claude Code's native Agent tool",
+  "author": {
+    "name": "Maxwell"
+  },
+  "agents": [
+    "agents/kimi-subagent.md"
+  ],
+  "commands": [
+    "commands/kimi.md"
+  ],
+  "skills": [
+    "skills/kimi-dispatch.md"
+  ],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "hooks/kimi-bash-guard.md"
+          }
+        ]
+      }
+    ]
+  }
+}
